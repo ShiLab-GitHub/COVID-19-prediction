@@ -2,7 +2,7 @@
 
 COVID-19 prediction is a machine learning model used to COVID-19. The model distinguishes samples from the five cohorts of critical COVID-19 recovered in ICU, non-critical COVID-19, non-COVID-19 in ICU, non-COVID-19 with symptoms and non-COVID-19 healthy by plasma metabolome data.
 
-##Data source
+## Data source
 The metabolomics raw data is from MetaboLights（ https://www.ebi.ac.uk/metabolights/ ）, Identifier: MTBLS1866
 
 MTBLS1866:Large-Scale Plasma Analysis Revealed New Mechanisms and Molecules Associated with the Host Response to SARS-CoV-2.
@@ -14,7 +14,7 @@ category 3  non-COVID-19 with symptoms：16
 category 4  non-COVID-19 healthy：26
 
 
-##Model
+## Model
 
 
 Random forest is a classifier that contains multiple decision trees, and its output category is determined by the mode of the category output by an individual tree.
@@ -22,13 +22,13 @@ Random forest is a classifier that contains multiple decision trees, and its out
 We use Random forest model for COVID-19 metabolome data to achieve five classifications and  obtain the feature importance ranking. In addition, we give some evaluation metrics for machine learning.
 
 We can get the importance ranking of features, the accuracy of classification, recall, precision, f1-score.
-## The environment of DeepMCL-DTI
+## The environment
     Python 3.7.12
     Scikit 1.0.2
     Numpy 1.21.6
     Pandas 1.6.5
 
-##Example output:
+## Example output:
 
 Feature sorting results ----------------------
 1、(0.0211, 'CHEBI:89633')
@@ -71,6 +71,7 @@ Feature sorting results ----------------------
 38、(0.0018, 'CHEBI:17987')
 39、(0.0017, 'CHEBI:84223')
 40、(0.0017, 'CHEBI:45919')
+
  ![image](https://user-images.githubusercontent.com/102600946/227543117-4879c99a-02da-4db1-943d-74eae19f9da7.png)
 
 accuracy: 0.79
